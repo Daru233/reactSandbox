@@ -76,3 +76,10 @@ h1, h2, h3, h4, h5, p {
   color: whitesmoke;
 }
 
+.mouse-position-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+}
+
