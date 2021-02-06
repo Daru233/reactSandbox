@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 
 const Clicker = () => {
 
     const [count, setCount] = useState(0);
     
+    // useEffect takes in a function 
+    // useEffect is executed after EVERY render of the component
+    useEffect(() => {
+        document.title = `You have clicked ${count} times!`
+    })
 
     // When you have to update state based on previous state value
     // pass a function into the state setter
@@ -28,6 +33,7 @@ const Clicker = () => {
             <button type="button" onClick={incrementHandler}> Increment </button>
             <button type="button" onClick={decrementHandler}> Decrement </button>
             <button type="button" onClick={resetHandler}> Reset </button>
+            <h3>check the page title! - was done using useEffect hook</h3>
         </div>
     )
 }
