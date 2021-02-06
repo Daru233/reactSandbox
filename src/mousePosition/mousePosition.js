@@ -18,6 +18,14 @@ const MousePosition = () => {
     useEffect(() => {
         console.log('useEffect called')
         window.addEventListener('mousemove', logMousePosition)
+
+        // when you want to execute component clean up code, include it in the function passed to useEffect
+        // return the function from the function passed into useEffect
+        // clean up code can be cancelling subscriptions, timers or removing event handlers
+        return () => {
+            console.log('Component unmounting code')
+            window.removeEventListener('mousemove', logMousePosition)
+        }
     }, [])
 
     return (
