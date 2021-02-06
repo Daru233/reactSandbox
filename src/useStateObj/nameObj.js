@@ -15,10 +15,10 @@ const NameObj = () => {
                 merge and update objects !!
                 onChange{e => setName({firstName: e.target.value })} would not work as intended
 
-                copy every property in the name object and overwrite firstName field with a different value
+                copy every property in the name object and overwrite firstName field with target value
                 onChange={e => setName({ ...name, lastName: e.target.value })}></input>
 
-                copy every property in the name object and overwrite lastName field with a different value
+                copy every property in the name object and overwrite lastName field with a target value
                 onChange={e => setName({ ...name, lastName: e.target.value })}></input>
 
                 uses the spread operator ... ( feature of es6 )
