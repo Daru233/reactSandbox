@@ -4,11 +4,13 @@ import GetRequest from './httpRequests/getRequest';
 import Header from './Header/Header.js';
 import NameObj from './useStateObj/nameObj';
 import UseStateArray from './useStateArray/useStateArray';
+import MouseContainer from './mousePosition/mouseContainer';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <MouseContainer />
       <UseStateArray />
       <NameObj />
       <Clicker />

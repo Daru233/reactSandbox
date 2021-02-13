@@ -64,3 +64,29 @@ h1, h2, h3, h4, h5, p {
   align-items: center;
   flex-direction: column;
 }
+
+.useState-with-array-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.useState-with-array-container ul {
+  color: whitesmoke;
+}
+
+.mouse-position-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+}
+
+.mouse-container-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
